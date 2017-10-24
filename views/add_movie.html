@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Add Movie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron"><h1 class="display-3">Have fun and add a movie. </h1></div>
+     <form action="/add_movie" method="POST">
+      <div class="form-group">
+          <p>
+              <input type="text" name="title" value="" class="form-control" placeholder="Movie title"/><br>
+              <input type="text" name="year" value="" class="form-control" placeholder="Year"/><br>
+              <input type="text" name="imdb" value="" class="form-control" placeholder="IMDB Link"/><br>
+            </p>
+            <input type="submit" value="Add To Database" class="btn btn-success"/>
+      </div>
+     </form>
+    </div>
+  </body>
+</html>
