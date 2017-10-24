@@ -34,8 +34,8 @@ MongoClient.connect('mongodb://localhost:27017/video', function(err, db) {
         var year = req.body.year;
         var imdb = req.body.imdb;
         
-        if ((title == '') || (year == '') || (imdb == '')) {
-            next('Please provide an entry for all fields.');
+        if ((title == '') || (year == '')) {
+            next('Please provide an entry title and year');
         } else {
             db.collection('movies').insertOne(
                 { 'title': title, 'year': year, 'imdb': imdb },
